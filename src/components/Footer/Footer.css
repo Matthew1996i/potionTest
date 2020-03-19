@@ -1,0 +1,113 @@
+.footerContent {
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.left ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+}
+
+.left ul > li {
+    margin: 10px;
+    font-size: 1.4rem;
+    list-style: none;
+}
+
+.left ul li a {
+    text-decoration: none;
+}
+
+.option li a {
+    color: #d84026;
+}
+
+.socialMedia li a {
+    color: #523468;
+    font-size: 2rem;
+}
+
+.left span {
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 20px 40px;
+    color: #4e4e4e;
+}
+
+.right {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding-left: 150px;
+}
+
+.right > .formEmail {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.formInputGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.right > .formEmail > .formInputGroup > button {
+    background-color: #d84026;
+    border: none;
+    padding: 5px;
+    width: 120px;
+    height: 38px;
+    border-radius: 5px;
+    margin-left: 15px;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    .footerContent {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footerContent > .right {
+        padding-left: 0;
+    }
+
+    .formEmail {
+        font-size: x-large;
+    }
+
+    .formEmail input {
+        border: .5px solid black;
+        border-radius: 5px;
+        height: 30px;
+    }
+
+    .socialMedia {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .left span {
+        margin: 0;
+        padding: 0;
+    }
+
+    .left span svg {
+        margin-right: 10px;
+    }
+
+    .left > .option {
+        display: none;
+    }
+}

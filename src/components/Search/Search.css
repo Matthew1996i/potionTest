@@ -1,0 +1,38 @@
+.contentSearch{
+    border: 1px solid #523468;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 550px;
+    padding: 10px;
+}
+
+.contentSearch > input {
+    border: none;
+    margin-left: 30px;
+}
+
+
+@media (max-width: 600px) {
+
+    .contentSearch{
+        border: 1px solid #523468;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        height: 50px;
+        width: 100%;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .contentSearch > label {
+        font-size: 2em;
+    }
+
+    .contentSearch > input {
+        font-size: x-large;
+        margin-left: 0px;
+    }
+}

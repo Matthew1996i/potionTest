@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+.content-aside-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 100px;
+    justify-content: space-between;
+    height: 150px;
+}
+
+.titleCart {
+    font-family: 'Bellota Text', cursive;
+    color: #d84026;
+    margin-right: 10px;
+    font-size: larger;
+}
+
+.titleCart, .bagContent > svg {
+    margin-right: 20px;
+}
+
+.titleCart > h3, h5 {
+    margin: 0
+}
+
+.contentMenuMobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    .navNavigator {
+        display: none;
+    }
+
+    .content-aside-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0px 0px;
+        width: 100%;
+    }
+
+    .hamburgerMenu {
+        width: 3em;
+        height: 3em;
+        padding: 10px;
+        color: #422a53;
+        cursor: pointer;
+    }
+
+    .closeMenu {
+        width: 4em;
+        height: 4em;
+        padding: 10px;
+        color: #422a53;
+        cursor: pointer;
+    }
+
+    .contentMenuMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contentMenuMobile > h5 {
+        display: flex;
+        flex: 1;
+        width: 100%;
+        justify-content: center;
+        font-size: xx-large;
+        background-color: #ececec;
+        padding: 20px 0;
+        color: #8a8a8a;
+        font-family: 'PT Serif', serif;
+    }
+
+    #menuMobileOpen {
+        display: none;
+    }
+}

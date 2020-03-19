@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+
+.prodPage {
+    padding: 0 50px;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.prodPage h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: xx-large;
+    font-family: 'PT Serif', serif;
+}
+
+@media (max-width: 600px) {
+    .prodPage {
+        padding: 0 0px;
+    }
+}

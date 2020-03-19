@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@1,300&display=swap');
+
+.cartContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+}
+ 
+.titleCart {
+    font-family: 'Bellota Text', cursive;
+    color: #d84026;
+    margin-right: 10px;
+    font-size: larger;
+}
+
+.titleCart, .bagContent > svg {
+    margin-right: 20px;
+}
+
+.titleCart > h3, h5 {
+    margin: 0
+}
+
+.bagContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bagContent  .bag{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+
+    
+    .titleCart {
+        display: none;
+    }
+
+    .cartContent {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        justify-content: center;
+        
+    }
+
+    .bagContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bagContent > .cont {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
